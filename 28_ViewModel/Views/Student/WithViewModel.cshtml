@@ -1,0 +1,40 @@
+﻿@using _28_ViewModel.Models
+@model Marksheet
+@{
+    ViewBag.Title = "WithViewModel";
+}
+
+<h2>WithViewModel</h2><br />
+
+<div class="row">
+    <div class="col-sm-3">
+        <label>@Model.MyStudent.Rollno</label>
+    </div>
+    <div class="col-sm-9">
+        <label>@Model.MyStudent.Name</label>
+    </div>
+</div>
+
+<table class="table">
+    <tr>
+        <th>C# marks</th>
+        <td>@Model.Assessment.Csharpmarks</td>
+    </tr>
+    <tr>
+        <th>MVC marks</th>
+        <td>@Model.Assessment.MVCmarks</td>
+    </tr>
+    <tr>
+        <th>Bootstrap marks</th>
+        <td>@Model.Assessment.Bootstrapmarks</td>
+    </tr>
+    <tr>
+        <th>
+            Total
+        </th>
+        <td>
+            @Model.Total
+        </td>
+    </tr>
+</table>
+
